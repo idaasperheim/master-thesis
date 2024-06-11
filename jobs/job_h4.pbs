@@ -1,0 +1,14 @@
+#PBS -S /bin/bash
+#PBS -q workq
+#PBS -l nodes=1:ppn=8
+#PBS -l mem=64gb
+#PBS -l walltime=200:00:00
+#PBS -N h4
+#PBS -o h4.out
+#PBS -e h4.err
+#PBS -m ae
+#PBS -M idaahol@ntnu.no
+ 
+cd $PBS_O_WORKDIR/
+module load Python/3.9.5-GCCcore-10.3.0
+python h4.py

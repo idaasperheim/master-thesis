@@ -1,0 +1,14 @@
+#PBS -S /bin/bash
+#PBS -q workq
+#PBS -l nodes=1:ppn=8
+#PBS -l mem=64gb
+#PBS -l walltime=400:00:00
+#PBS -N adaptvqe-h6
+#PBS -o adaptvqe-h6.out
+#PBS -e adaptvqe-h6.err
+#PBS -m ae
+#PBS -M idaahol@ntnu.no
+ 
+cd $PBS_O_WORKDIR/
+module load Python/3.9.5-GCCcore-10.3.0
+python h6_adapt.py
