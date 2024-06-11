@@ -10,7 +10,6 @@ import pickle
 import os
 import sys
 import copy as cp
-
 import pyscf
 import openfermion
 import openfermionpyscf 

@@ -1,12 +1,9 @@
 # Importing classes
-from classes.molecular_data import MOLECULAR_DATA
 from classes.ansatz import ANSATZ
 
 # Importing libraries
 import scipy
 import numpy as np
-import pickle
-import os
 import copy as cp
 import pyscf
 import openfermion

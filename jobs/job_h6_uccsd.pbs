@@ -3,9 +3,9 @@
 #PBS -l nodes=1:ppn=16
 #PBS -l mem=128gb
 #PBS -l walltime=400:00:00
-#PBS -N uccsdvqe-h6
-#PBS -o uccsdvqe-h6.out
-#PBS -e uccsdvqe-h6.err
+#PBS -N vqe-h6
+#PBS -o vqe-h6.out
+#PBS -e vqe-h6.err
 #PBS -m ae
 #PBS -M idaahol@ntnu.no
 #PBS -J 0-19 
