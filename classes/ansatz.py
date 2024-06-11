@@ -153,7 +153,7 @@ class ANSATZ():
                 no_gates += 1
                 no_cnots += 1
   
-            # 4. Apply e^(-i*Z*parameter) = Rz(-parameter*2) rotation qubit
+            # 4. Apply e^(i*Z*parameter) = R_z(-2*parameter) rotation qubit
             rot_qubit = max(involved_qubits)
             circuit.rz(-2 * parameter,no_qubits - 1 - rot_qubit)
             no_gates += 1
