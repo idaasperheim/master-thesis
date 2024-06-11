@@ -1,7 +1,5 @@
 import scipy
 import numpy as np
-import pickle
-import os
 import copy as cp
 import pyscf
 import openfermion
